@@ -1,0 +1,38 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "find-unreferenced-files",
+    "description": "i18n:find-unreferenced-files.description",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@babel/parser": "^7.24.7",
+        "@babel/traverse": "^7.24.7",
+        "@babel/types": "^7.24.7",
+        "@types/babel__traverse": "^7.20.6",
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^16.18.101",
+        "fs": "^0.0.1-security",
+        "typescript": "^4.9.5"
+    },
+    "panels": {},
+    "contributions": {
+        "assets": {
+            "menu": {
+                "methods": "./dist/main.js",
+                "assetMenu": "onAssetMenu",
+                "dbMenu": "onDBMenu",
+                "panelMenu": "onPanelMenu"
+            }
+        }
+    },
+    "author": "Cocos Creator",
+    "editor": ">=3.7.3",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    },
+    "dependencies": {
+        "fs-extra": "^11.2.0",
+        "vue": "^3.4.31"
+    }
+}
